@@ -12,6 +12,7 @@ import { StudentCreate } from "./components/student/StudentCreate";
 import { StudentHome } from "./components/student/StudentHome";
 
 function App() {
+  // "build": "react-scripts build",
   return (
     <div className="App">
       <Routes>
