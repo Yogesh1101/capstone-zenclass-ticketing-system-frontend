@@ -1,38 +1,81 @@
+/* Basic CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* App CSS */
 .App {
-  text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Login & Signup CSS */
+#login-main,
+#signup-main {
+  background-image: linear-gradient(
+    #a0d2eb,
+    #e5eaf5,
+    #d0bdf4,
+    #8458b3,
+    #a28089
+  );
+}
+#login-main .login-container,
+#signup-main .signup-container {
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.login-welcome,
+.signup-welcome {
+  font-size: 50px;
+}
+.login-welcome,
+.signup-welcome,
+.login-title,
+.signup-title {
+  color: #ff1d58;
+}
+.login-text,
+.signup-text {
+  font-size: 30px;
+  color: #0049b7;
+  text-underline-offset: 10px;
+}
+.login-dont,
+.signup-user {
+  cursor: pointer;
+}
+.login-dont:hover,
+.signup-user:hover {
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.login-btn,
+.signup-btn {
+  background-color: #0049b7 !important;
+  border: none !important;
+  letter-spacing: 0.05em !important;
+  width: 30% !important;
+}
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #ff1d58 !important;
+}
+.submit-hide {
+  visibility: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Loading Screen CSS */
+.loading-screen {
+  height: 100%;
 }
