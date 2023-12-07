@@ -31,7 +31,7 @@ export const StudentDashboard = () => {
 
   useEffect(() => {
     checkToken();
-  }, []);
+  }, [checkToken]);
   return (
     <div className="student-main-div">
       {load ? (
