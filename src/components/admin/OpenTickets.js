@@ -87,7 +87,7 @@ export const OpenTickets = () => {
                           <StyledTableCell align="left">STATUS</StyledTableCell>
                           <StyledTableCell align="left">DATE</StyledTableCell>
                           <StyledTableCell align="left">
-                            RESOLVED AGAIN
+                            REOPEN DUE TO
                           </StyledTableCell>
                           <StyledTableCell align="center">
                             RESOLVE
