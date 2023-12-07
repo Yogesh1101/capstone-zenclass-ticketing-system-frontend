@@ -45,7 +45,7 @@ const Login = () => {
 
   useEffect(() => {
     checkToken();
-  }, [checkToken]);
+  }, []);
 
   const formik = useFormik({
     initialValues: {

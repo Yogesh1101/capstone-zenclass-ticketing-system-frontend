@@ -32,7 +32,7 @@ export const AdminDashboard = () => {
 
   useEffect(() => {
     checkToken();
-  }, [checkToken]);
+  }, []);
   return (
     <div className="admin-main-div">
       {load ? (
