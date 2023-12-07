@@ -73,7 +73,6 @@ const Signup = () => {
           setLoading(false);
           setErr(data.message);
           localStorage.setItem("token", data.token);
-          alert(data.message);
           if (data.role === "admin") {
             navigate("/admin/home");
           } else {
