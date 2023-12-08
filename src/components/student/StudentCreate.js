@@ -53,11 +53,11 @@ export const StudentCreate = () => {
     }
   };
   return (
-    <div className="container mt-5 flex flex-column align-items-center">
+    <div className="container mt-5 d-flex flex-column align-items-center">
       <h1>CreateTicket</h1>
       <form
         onSubmit={formik.handleSubmit}
-        className="mt-5 w-75 flex flex-column"
+        className="mt-5 w-75"
       >
         <div className="mb-4">
           <TextField

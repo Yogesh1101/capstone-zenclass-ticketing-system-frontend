@@ -25,6 +25,8 @@ export const AdminDashboard = () => {
     }
   };
 
+  const finalName = name.split(" ").join("");
+
   function handleLogout() {
     localStorage.removeItem("token");
     navigate("/login");
@@ -86,7 +88,7 @@ export const AdminDashboard = () => {
             <h1 className="text-center">
               WELCOME{" "}
               <span className="welcome-name text-uppercase text-decoration-underline link-underline-warning ">
-                {name}
+                {finalName}
               </span>
             </h1>
             <Outlet />

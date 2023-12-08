@@ -65,7 +65,8 @@ h3, h4, p {
   background-color: #0049b7 !important;
   border: none !important;
   letter-spacing: 0.05em !important;
-  width: 30% !important;
+  /* width: 30% !important; */
+  /* min-width: 30px !important; */
 }
 .login-btn:hover,
 .signup-btn:hover {
@@ -78,4 +79,11 @@ h3, h4, p {
 /* Loading Screen CSS */
 .loading-screen {
   height: 100%;
+}
+@media only screen and (max-width: 300px) {
+  .login-welcome,
+  .signup-welcome {
+    font-size: 40px;
+    margin-bottom: 20px !important;
+  }
 }
