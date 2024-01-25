@@ -40,6 +40,7 @@ export function HomeTableBody({ ticket, index, getAllStudentTicket }) {
   }));
 
   const handleDelete = () => {
+    setDeleteLoading(true);
     fetch(`${API}/user/delete/${ticket._id}`, {
       method: "DELETE",
       headers: {
@@ -107,7 +108,6 @@ export function HomeTableBody({ ticket, index, getAllStudentTicket }) {
         <LoadingButton
           onClick={() => {
             handleDelete();
-            setDeleteLoading(true);
           }}
           loading={deleteLoading}
           variant="contained"

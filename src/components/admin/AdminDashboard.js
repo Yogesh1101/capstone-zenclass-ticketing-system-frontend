@@ -60,7 +60,7 @@ export const AdminDashboard = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="adminNavbar">
-                <ul className="navbar-nav me-auto mb-2 text-center  mb-lg-0 w-100 d-flex justify-content-end fs-5">
+                <ul className="navbar-nav me-auto mb-2 text-center mb-lg-0 w-100 d-flex justify-content-end fs-5">
                   <li className="nav-item">
                     <NavLink to="/admin/home">Home</NavLink>
                   </li>
